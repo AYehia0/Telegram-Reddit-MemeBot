@@ -4,6 +4,7 @@ bot link in case you want to try : https://t.me/memes_fetcher_bot
 
 I used sqlite to store userID and the urls/memes they received to avoid sending duplicate memes by creating a small database
 ```connection = sqlite3.connect('links.sqlite3')```
+
 and creating tables with connections in between:
 ```curr.executescript('''
 CREATE TABLE IF NOT EXISTS USERS ( 
