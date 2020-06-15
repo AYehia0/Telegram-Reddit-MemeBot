@@ -1,4 +1,4 @@
-# TeleRedd MemeBot 
+# **TeleRedd MemeBot** 
 This is a telegram bot which fetches latest memes in r/Memes using both Telegram and Reddit APIs
 bot link in case you want to try : https://t.me/memes_fetcher_bot
 
@@ -34,5 +34,16 @@ First time using the bot
 
 
 
-some features :
+**Features** :
   - Nothing
+
+**Bugs** :
+  - As telegram API deletes the messages log every 24 hours : https://core.telegram.org/bots/api#getting-updates
+  
+     ```Incoming updates are stored on the server until the bot receives them either way, but they will not be kept longer than 24 hours.```
+     
+     this error ocurred while fetching the last messege from the empty log: 
+  
+    ```update_id = last_data('getUpdates')['update_id']```
+  
+  - some other unknown trash problems in addition to messy code (**ineffective**)
